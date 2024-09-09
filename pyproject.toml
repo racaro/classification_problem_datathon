@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "classification_problem"
+version = "0.1.0"
+description = "Binary classification problem with data"
+readme = "README.rst"
+authors = [
+  {name = "yRaul Carrasco Romero", email = "raulcarrasco9797@gm"}
+]
+maintainers = [
+  {name = "yRaul Carrasco Romero", email = "raulcarrasco9797@gm"}
+]
+classifiers = [
+
+]
+license = {text = "GNU General Public License v3"}
+dependencies = [
+  
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/racaro/classification_problem/issues"
+changelog = "https://github.com/racaro/classification_problem/blob/master/changelog.md"
+homepage = "https://github.com/racaro/classification_problem"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"
+
