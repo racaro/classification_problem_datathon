@@ -5,7 +5,7 @@
 import pytest
 
 
-from classification_problem import classification_problem
+from data_loader import DataLoader
 
 
 @pytest.fixture

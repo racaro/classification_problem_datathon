@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'classification_problem'
-copyright = "2024, yRaul Carrasco Romero"
-author = "yRaul Carrasco Romero"
+copyright = "2024, Raul Carrasco Romero"
+author = "Raul Carrasco Romero"
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -129,7 +129,7 @@ latex_elements = {
 latex_documents = [
     (master_doc, 'classification_problem.tex',
      'classification_problem Documentation',
-     'yRaul Carrasco Romero', 'manual'),
+     'Raul Carrasco Romero', 'manual'),
 ]
 
 
