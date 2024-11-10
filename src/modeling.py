@@ -56,9 +56,7 @@ class Model:
             plt.ylabel('True Positive Rate')
             plt.title('ROC at test')
             plt.legend(loc="lower right")
-            ## Calculamos estadístico AUC en train y test
             print(f"AUC at test: {roc_auc_score(y, clf.predict_proba(X)[:, 1])}")
-            ## Calculamos también precisión y recall en test
             print(f"\ntest precision: {precision_score(y, clf.predict(X))}")
             print(f"Recall at test: {recall_score(y, clf.predict(X))}")
             print(f"Confusion matrix: \n{confusion_matrix(y, clf.predict(X))}")
